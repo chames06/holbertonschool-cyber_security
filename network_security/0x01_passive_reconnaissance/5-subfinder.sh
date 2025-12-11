@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -silent -d $1 | tee /dev/tty | xargs -I{} sh -c 'echo -n "{},"; dig +short {} | head -n 1' > "$1".txt
+subfinder -silent -d $1 | tee >(while read h; do echo -n "$h,"; dig +short "$h" | head -n1; done > "$1".txt)
