@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d $1 -silent | tee /dev/tty | dnsx -silent -resp-only -a -o $1.txt
+subfinder -d $1 -silent -oJ | tee >(jq -r .host) >(jq -r '"\(.host),\(.ip[0])"' > $1.txt) > /dev/null
