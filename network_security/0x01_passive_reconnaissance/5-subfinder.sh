@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -silent -d $1 | tee >(while read h; do echo -n "$h,"; dig +short "$h" | head -n1; done > "$1".txt)
+subfinder -d $1 -silent | tee >(dnsx -silent -resp-only -a -o $1.txt)
