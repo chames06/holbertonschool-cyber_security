@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d $1 -silent -oJ | tee >(jq -r .host) >(jq -r '"\(.host),\(.ip[0])"' > $1.txt) > /dev/null
+subfinder -d $1 -silent | tee >(xargs -I {} sh -c 'echo {}; dig +short {} | head -1 | xargs -I IP echo {},{IP}' | grep -v "^[^,]*$" > $1.txt) | cat
