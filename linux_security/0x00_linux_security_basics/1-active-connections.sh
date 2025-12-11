@@ -1,2 +1,2 @@
 #!/bin/bash
-ss -antpe
+ss -atnpe
