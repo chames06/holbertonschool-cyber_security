@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d $1 -silent | tee /dev/tty | dnsx -silent -a -resp -no-color | awk '{print $1","$3}' | tr -d '[]' > $1.txt
+subfinder -d $1 -silent | tee >(while read domain; do dig +short $domain A | head -1 | xargs -I {} echo "$domain,{}"; done > $1.txt)
