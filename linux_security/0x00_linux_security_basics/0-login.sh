@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo lastlog | head -n 7
+sudo last -n 5
