@@ -1,2 +1,2 @@
 #!/bin/bash
-ss -atnpe
+ss -tulpn
