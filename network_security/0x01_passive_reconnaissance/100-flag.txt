@@ -1,2 +1,1 @@
-#!/bin/bash
-dig @$1 passive.hbtn TXT | grep -oP '[a-f0-9]{32}'
+bc41162998d0f50aa29b2126081fb69d
