@@ -1,2 +1,2 @@
 #!/bin/bash
-bc41162998d0f50aa29b2126081fb69d
+dig @$1 passive.hbtn TXT
