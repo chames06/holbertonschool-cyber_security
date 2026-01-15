@@ -5,7 +5,7 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: fr-FR,fr;q=0.5
 Accept-Encoding: gzip, deflate
 Connection: keep-alive
-Referer: http://10.42.31.162/support
+Referer: http://web0x00.hbtn/support
 Cookie: session=.eJxFyksKgCAURuG9_GMJmzoqWkIrULyR4AuvUhDtPaGBw_NxHqw2uMhQh_ZMAlvjmgKVIXvLOZXaoZbWm4J2Hgr8-3KRkbeU02lqhICzULNAYypRBxoj3g8vsSW4.aWjJJw.MJL0f_7hKkfHerpC6m1c7-FGCZk
 Sec-GPC: 1
 Upgrade-Insecure-Requests: 1
