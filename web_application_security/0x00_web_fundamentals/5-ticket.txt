@@ -1,6 +1,13 @@
 GET /ticket?id=1 HTTP/1.1
 Host: 10.42.31.162
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: fr-FR,fr;q=0.5
+Accept-Encoding: gzip, deflate
 Connection: keep-alive
+Referer: http://10.42.31.162/support
 Cookie: session=.eJxFyksKgCAURuG9_GMJmzoqWkIrULyR4AuvUhDtPaGBw_NxHqw2uMhQh_ZMAlvjmgKVIXvLOZXaoZbWm4J2Hgr8-3KRkbeU02lqhICzULNAYypRBxoj3g8vsSW4.aWjJJw.MJL0f_7hKkfHerpC6m1c7-FGCZk
+Sec-GPC: 1
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
