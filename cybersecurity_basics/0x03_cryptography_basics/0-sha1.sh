@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <password>"
+  exit 1
+fi
+
+echo -n "$1" | sha1sum | awk '{print $1}' > 0_hash.txt
