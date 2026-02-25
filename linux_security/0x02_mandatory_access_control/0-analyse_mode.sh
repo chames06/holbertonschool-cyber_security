@@ -1,2 +1,2 @@
 #!/bin/bash
-setstatus
+sestatus | grep "SELinux status" | cut -d: -f2- | xargs
